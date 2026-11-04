@@ -1,0 +1,922 @@
+
+/* =========================================
+   STYLE WEBSITE SALMEIRA
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #594237;
+}
+
+/* =========================================
+   HALAMAN UTAMA
+   ========================================= */
+
+.page-home {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f1eb;
+    color: #594237;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* NAVBAR */
+
+.navbar-home {
+    width: 100%;
+    min-height: 85px;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffaf5;
+    box-shadow: 0 3px 12px rgba(70,48,35,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-home {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #65483b;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-menu a {
+    color: #65483b;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #b17b55;
+}
+
+.nav-menu .nav-button {
+    background-color: #65483b;
+    color: white;
+    padding: 13px 23px;
+    border-radius: 30px;
+}
+
+.nav-menu .nav-button:hover {
+    background-color: #8a6250;
+}
+
+/* HERO */
+
+.hero-home {
+    min-height: 620px;
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 650px;
+}
+
+.hero-label {
+    color: #a66f50;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero-text h1 {
+    color: #543c32;
+    font-size: 76px;
+    line-height: 1.15;
+    margin: 0 0 22px;
+}
+
+.hero-text h1 i {
+    font-weight: normal;
+}
+
+.hero-description {
+    color: #77675e;
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #704e40;
+    color: white;
+    padding: 16px 27px;
+    border-radius: 35px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #9b725c;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 540px;
+    height: 540px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 250px 250px 25px 25px;
+    box-shadow: 0 12px 25px rgba(70,48,35,0.15);
+}
+
+/* TENTANG SALMEIRA */
+
+.about-home {
+    padding: 90px 15%;
+    text-align: center;
+    background-color: #fffaf5;
+}
+
+.about-home h2 {
+    font-size: 42px;
+    color: #543c32;
+    margin: 15px 0;
+}
+
+.about-home > p {
+    max-width: 750px;
+    margin: auto;
+    color: #77675e;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+/* KOLEKSI PRODUK */
+
+.collection-home {
+    padding: 85px 7%;
+}
+
+.collection-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.collection-heading h2 {
+    font-size: 42px;
+    color: #543c32;
+    margin: 12px 0;
+}
+
+.collection-heading > p {
+    color: #77675e;
+    font-size: 17px;
+}
+
+.product-grid-home {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.product-card-home {
+    background-color: #fffaf5;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(70,48,35,0.08);
+    transition: 0.3s;
+}
+
+.product-card-home:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(70,48,35,0.14);
+}
+
+.product-image-home {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background-color: #eee5dc;
+}
+
+.product-image-home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.product-card-home:hover .product-image-home img {
+    transform: scale(1.05);
+}
+
+.product-info-home {
+    padding: 22px;
+}
+
+.product-category-home {
+    color: #a66f50;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.product-info-home h3 {
+    color: #543c32;
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.product-color-home {
+    color: #77675e;
+    font-size: 15px;
+}
+
+.product-bottom-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eaded3;
+}
+
+.product-price-home {
+    color: #704e40;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-stock-home {
+    color: #89776b;
+    font-size: 13px;
+}
+
+/* FOOTER */
+
+.footer-home {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #543c32;
+    color: #fffaf5;
+}
+
+.footer-home h2 {
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin: 0 0 12px;
+}
+
+.footer-home p {
+    color: #eaded3;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =========================================
+   HALAMAN ADMIN
+   ========================================= */
+
+.admin-page {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f1eb;
+    color: #594237;
+    font-family: Georgia, 'Times New Roman', serif;
+    min-height: 100vh;
+}
+
+.admin-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.admin-header {
+    background-color: #fffaf5;
+    padding: 25px 35px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 12px rgba(70,48,35,0.08);
+    margin-bottom: 30px;
+}
+
+.admin-header h2 {
+    color: #543c32;
+    margin: 0;
+    font-size: 28px;
+}
+
+.logout-button {
+    background-color: #704e40;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* KONTEN ADMIN */
+
+.admin-content {
+    background-color: #fffaf5;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(70,48,35,0.08);
+}
+
+.admin-title {
+    text-align: center;
+    color: #543c32;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* SEARCH */
+
+.admin-search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.admin-search input {
+    padding: 12px 15px;
+    width: 280px;
+    border: 1px solid #d8c5b7;
+    border-radius: 8px;
+    font-family: Georgia, serif;
+}
+
+.admin-search button {
+    background-color: #704e40;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* TOMBOL TAMBAH */
+
+.add-button {
+    display: inline-block;
+    background-color: #9b725c;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+/* TABEL ADMIN */
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.admin-table th {
+    background-color: #704e40;
+    color: white;
+    padding: 16px 10px;
+}
+
+.admin-table td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #eaded3;
+    color: #594237;
+}
+
+.admin-table tr:hover {
+    background-color: #f7f1eb;
+}
+
+.admin-table img {
+    width: 80px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.edit-button {
+    color: #704e40;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.delete-button {
+    color: #a65b50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PAGINATION */
+
+.pagination {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 9px 14px;
+    margin: 3px;
+    background-color: #eaded3;
+    color: #594237;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #704e40;
+    color: white;
+}
+
+/* =========================================
+   LOGIN DAN REGISTER
+   ========================================= */
+
+.page-register {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f1eb;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.page-register .container {
+    width: 100%;
+    max-width: 460px;
+}
+
+.form-card {
+    background: #fffaf5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(70,48,35,.12);
+    border: 1px solid #eaded3;
+}
+
+.form-card h3 {
+    color: #543c32;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #594237;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d8c5b7;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Georgia, serif;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #9b725c;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 15px;
+}
+
+.btn-edit {
+    background: #704e40;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #9b725c;
+}
+
+.btn-kembali {
+    background: #eaded3;
+    color: #594237;
+}
+
+.btn-kembali:hover {
+    background: #d8c5b7;
+}
+
+/* =========================================
+   HALAMAN INDEX ADMIN
+   ========================================= */
+
+body.page-index {
+    margin: 0;
+    padding: 1px 0 30px;
+    min-height: 100vh;
+    background-color: #f7f1eb;
+    color: #594237;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.page-index .container {
+    width: 90%;
+    max-width: 1250px;
+    margin: 30px auto;
+}
+
+/* HILANGKAN HEADER SELAMAT DATANG */
+
+.page-index .container > h2 {
+    display: none;
+}
+
+/* MENU ADMIN */
+
+.page-index .menu-admin {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 20px;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-admin .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.menu-admin .btn-home {
+    background-color: #eaded3;
+    color: #594237;
+}
+
+.menu-admin .btn-home:hover {
+    background-color: #d8c5b7;
+}
+
+.menu-admin .btn-logout {
+    background-color: #704e40;
+    color: white;
+}
+
+.menu-admin .btn-logout:hover {
+    background-color: #9b725c;
+}
+
+/* JUDUL DAN KONTEN MENYATU */
+
+
+.page-index .container h3 {
+    text-align: center;
+    color: #543c32;
+    font-size: 30px;
+    padding: 28px 20px;
+    margin-bottom: 0;
+    margin: 0;
+    background-color: #fffaf5;
+    border-radius: 15px 15px 0 0;
+}
+
+.page-index .container h3:first-of-type {
+    padding-bottom: 0px;
+}
+
+.page-index .container h3:nth-of-type(2) {
+    padding-top: 0px;
+    border-radius: 0;
+}
+
+
+/* AREA PENCARIAN DAN TAMBAH DATA */
+
+.page-index .top-bar {
+    background-color: #fffaf5;
+    padding: 20px 25px;
+    margin: 0;
+    border-radius: 0;
+}
+
+.page-index .search-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.page-index .search-box input {
+    width: 380px;
+    max-width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d8c5b7;
+    border-radius: 10px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    color: #594237;
+    background-color: white;
+}
+
+.page-index .search-box input:focus {
+    outline: none;
+    border-color: #9b725c;
+}
+
+.page-index .btn-cari {
+    background-color: #704e40;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.page-index .btn-cari:hover {
+    background-color: #9b725c;
+}
+
+.page-index .btn-tambah {
+    display: inline-block;
+    background-color: #9b725c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.page-index .btn-tambah:hover {
+    background-color: #704e40;
+}
+
+/* TABEL PRODUK */
+
+.page-index table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fffaf5;
+    text-align: center;
+    margin: 0;
+}
+
+.page-index table th {
+    background-color: #704e40;
+    color: white;
+    padding: 17px 12px;
+}
+
+.page-index table td {
+    padding: 18px 12px;
+    border-bottom: 1px solid #eaded3;
+    color: #594237;
+}
+
+.page-index table tr:hover {
+    background-color: #f7f1eb;
+}
+
+.page-index table img {
+    width: 85px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* TOMBOL AKSI */
+
+.page-index .btn-edit {
+    display: inline-block;
+    background-color: #704e40;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.page-index .btn-edit:hover {
+    background-color: #9b725c;
+}
+
+.page-index .btn-hapus {
+    color: #a65b50;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.page-index .btn-hapus:hover {
+    color: #704e40;
+}
+
+/* PAGINATION */
+
+.page-index .pagitation-wrapper {
+    background-color: #fffaf5;
+    padding: 25px;
+    margin: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+.page-index .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+}
+
+.page-index .pagination a {
+    padding: 10px 16px;
+    background-color: #eaded3;
+    color: #594237;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.page-index .pagination a:hover,
+.page-index .pagination a.active {
+    background-color: #704e40;
+    color: white;
+}
+
+.page-index .pagination-disabled {
+    color: #a99a8e;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .hero-home {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 7%;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 55px;
+    }
+
+    .hero-image img {
+        height: 450px;
+    }
+
+    .product-grid-home {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+
+    .admin-container,
+    .page-index .container {
+        width: 95%;
+    }
+
+    .admin-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .admin-content {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .admin-table {
+        min-width: 750px;
+    }
+
+    .page-index .menu-admin {
+        flex-wrap: wrap;
+    }
+
+    .page-index .container h3 {
+        font-size: 20px;
+        padding: 22px 12px;
+    }
+
+    .page-index .top-bar {
+        padding: 15px;
+    }
+
+    .page-index table {
+        min-width: 850px;
+    }
+
+    .page-index .top-bar {
+        overflow-x: auto;
+    }
+
+    .page-index .search-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar-home {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    .hero-text h1 {
+        font-size: 43px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .about-home {
+        padding: 65px 8%;
+    }
+
+    .about-home h2,
+    .collection-heading h2 {
+        font-size: 32px;
+    }
+
+    .product-grid-home {
+        grid-template-columns: 1fr;
+    }
+}
